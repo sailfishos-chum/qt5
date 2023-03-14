@@ -83,6 +83,8 @@ Summary: RPM macros for source Qt5 packages
 %description srpm-macros
 %{summary}.
 
+%prep
+%setup -q
 
 %install
 install -Dpm644 macros.qt5 %{buildroot}%{_rpmconfigdir}/macros.d/macros.qt5
