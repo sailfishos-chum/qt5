@@ -4,6 +4,7 @@ Release: 1%{?dist}
 Summary: Qt5 meta package
 License: GPLv3
 URL: https://getfedora.org/
+Source0: %{name}-%{version}.tar.bz2
 BuildArch: noarch
 
 Requires: opt-qt5-qdbusviewer
