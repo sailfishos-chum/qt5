@@ -1,0 +1,34 @@
+%_opt_qt5_prefix /opt/qt5
+%_opt_qt5_libdir %{_opt_qt5_prefix}/%{_lib}
+
+%_opt_qt5_archdatadir %{_opt_qt5_libdir}/qt5
+%_opt_qt5_bindir %{_opt_qt5_prefix}/bin
+%_opt_qt5_datadir %{_opt_qt5_prefix}/share
+%_opt_qt5_docdir %{_opt_qt5_prefix}/doc
+%_opt_qt5_examplesdir %{_opt_qt5_prefix}/examples
+%_opt_qt5_headerdir %{_opt_qt5_prefix}/include
+%_opt_qt5_includedir %{_opt_qt5_headerdir}
+%_opt_qt5_importdir %{_opt_qt5_archdatadir}/imports
+%_opt_qt5_libexecdir %{_opt_qt5_archdatadir}/libexec
+%_opt_qt5_plugindir %{_opt_qt5_archdatadir}/plugins
+%_opt_qt5_qmldir %{_opt_qt5_archdatadir}/qml
+%_opt_qt5_qmake @@QMAKE@@
+%_opt_qt5_settingsdir %{_opt_qt5_prefix}/etc
+%_opt_qt5_sysconfdir %{_opt_qt5_settingsdir}
+%_opt_qt5_translationdir %{_opt_qt5_datadir}/qt5/translations
+
+%_opt_qt5_cflags %{nil}@@QT5_CFLAGS@@
+%_opt_qt5_cxxflags %{nil}@@QT5_CXXFLAGS@@
+%_opt_qt5_ldflags %{nil}%{?__global_ldflags} @@QT5_RPM_LD_FLAGS@@
+%_opt_qt5_optflags %{optflags} @@QT5_RPM_OPT_FLAGS@@
+
+%_opt_qt5_qmake_flags \\\
+  QMAKE_CFLAGS_DEBUG="${CFLAGS:-%{_opt_qt5_optflags} %{?_opt_qt5_cflags}}" \\\
+  QMAKE_CFLAGS_RELEASE="${CFLAGS:-%{_opt_qt5_optflags} %{?_opt_qt5_cflags}}" \\\
+  QMAKE_CXXFLAGS_DEBUG="${CXXFLAGS:-%{_opt_qt5_optflags} %{?_opt_qt5_cxxflags}}" \\\
+  QMAKE_CXXFLAGS_RELEASE="${CXXFLAGS:-%{_opt_qt5_optflags} %{?_opt_qt5_cxxflags}}" \\\
+  QMAKE_LFLAGS_DEBUG="${LDFLAGS:-%{_opt_qt5_ldflags}}" \\\
+  QMAKE_LFLAGS_RELEASE="${LDFLAGS:-%{_opt_qt5_ldflags}}" \\\
+  QMAKE_STRIP=
+
+%opt_qmake_qt5 /opt/qt5/bin/qmake
