@@ -4,8 +4,6 @@ Release: 1%{?dist}
 Summary: Qt5 meta package
 License: GPLv3
 URL: https://getfedora.org/
-Source0: macros.qt5
-Source1: macros.qt5-srpm
 BuildArch: noarch
 
 Requires: opt-qt5-qdbusviewer
@@ -86,8 +84,8 @@ Summary: RPM macros for source Qt5 packages
 
 
 %install
-install -Dpm644 %{SOURCE0} %{buildroot}%{_rpmconfigdir}/macros.d/macros.qt5
-install -Dpm644 %{SOURCE1} %{buildroot}%{_rpmconfigdir}/macros.d/macros.qt5-srpm
+install -Dpm644 macros.qt5 %{buildroot}%{_rpmconfigdir}/macros.d/macros.qt5
+install -Dpm644 macros.qt5-srpm %{buildroot}%{_rpmconfigdir}/macros.d/macros.qt5-srpm
 
 # substitute custom flags, and the path to binaries: binaries referenced from
 # macros should not change if an application is built with a different prefix.
