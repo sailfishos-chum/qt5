@@ -35,5 +35,5 @@
 
 %opt_qt5_default_filter %{expand: \
 %global __provides_exclude_from %{?__provides_exclude_from:%__provides_exclude_from|}^%{_opt_qt5_libdir}
-%global __requires_exclude_from %{?__requires_exclude_from:%__requires_exclude_from|}^%{_opt_qt5_libdir}
+%global __requires_exclude %{?__requires_exclude:%__requires_exclude|}^libQt5.*$
 }
