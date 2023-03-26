@@ -31,4 +31,5 @@
   QMAKE_LFLAGS_RELEASE="${LDFLAGS:-%{_opt_qt5_ldflags}}" \\\
   QMAKE_STRIP=
 
-%opt_qmake_qt5 /opt/qt5/bin/qmake
+%opt_qmake_qt5 /opt/qt5/bin/qmake %{_opt_qt5_qmake_flags}
+
