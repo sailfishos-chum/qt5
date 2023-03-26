@@ -33,3 +33,7 @@
 
 %opt_qmake_qt5 /opt/qt5/bin/qmake %{_opt_qt5_qmake_flags}
 
+%opt_qt5_default_filter %{expand: \
+%global __provides_exclude_from %{?__provides_exclude_from:%__provides_exclude_from|}^%{_opt_qt5_libdir}
+%global __requires_exclude_from %{?__requires_exclude_from:%__requires_exclude_from|}^%{_opt_qt5_libdir}
+}
