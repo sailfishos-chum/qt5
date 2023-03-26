@@ -11,8 +11,8 @@ https://github.com/sailfishos-chum/qt5/wiki/Getting-Started
 ## Dependencies
 
 To avoid conflict with the system-provided dependencies, we cannot
-rely on RPM automatic dependencies handling for libraries and have to
-specify them manually.
+rely on RPM automatic dependencies handling for libraries or apps and
+have to specify them manually.
 
 Reason for manual dependencies handling is simple: libraries with the
 same name are provided by system-installed and new Qt. For example,
@@ -24,7 +24,7 @@ automatic search for the libraries by adding
 %{?opt_qt5_default_filter}
 ```
 
-at the end of the SPEC header, before the package name. If there are
+at the end of the SPEC header, before the package requirements. If there are
 other `__requires_exclude_from`, `__provides_exclude_from`,
 `__requires_exclude` and `__provides_exclude` defined in SPEC, those
 have to be defined before `opt_qt5_default_filter`.
