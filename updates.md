@@ -32,9 +32,16 @@ Update instructions for Qt5 or KF5:
 
 - Clean up `tmp` subfolder
 
-- For updating packages at OBS, run
-  - for Qt5: `scripts/update-obs-packages.sh --qt5`
-  - for KF5: `scripts/update-obs-packages.sh --kf5`
+- For updating packages at OBS `sailfishos:chum:testing`, run
+  - for Qt5: `scripts/update-obs-packages.sh --qt5 --testing`
+  - for KF5: `scripts/update-obs-packages.sh --kf5 --testing`
+
+- Wait till update is finished and test it
+
+- If all is fine, update release project by replacing the last option
+  of the script:
+  - for Qt5: `scripts/update-obs-packages.sh --qt5 --release`
+  - for KF5: `scripts/update-obs-packages.sh --kf5 --release`
 
 
 ## Configuration file format

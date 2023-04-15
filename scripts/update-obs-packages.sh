@@ -2,19 +2,21 @@
 
 set -e
 
-ARGS_PROCESSED=$(getopt -o kq --long kf5,qt5 -- "$@")
+ARGS_PROCESSED=$(getopt -o kqrt --long kf5,qt5,release,testing -- "$@")
 
 INPUT=
 KF5=
 QT5=
 GITHUB_BASE=https://github.com/rinigus
-OBS_PROJECT=home:rinigus:qt515:packaging
+OBS_PROJECT=
 
 eval set -- "$ARGS_PROCESSED"
 while [ : ]; do
   case "$1" in
     -k | --kf5) KF5=1; INPUT=packages.kf5; shift; ;;
     -q | --qt5) QT5=1; INPUT=packages.qt5; shift; ;;
+    -r | --release) OBS_PROJECT=home:rinigus:qt515:packaging; shift; ;;
+    -t | --testing) OBS_PROJECT=home:rinigus:qt515:packaging; shift; ;;
     --) shift; break; ;;
   esac
 done
@@ -22,9 +24,12 @@ done
 # check options
 [ -z "$KF5" ] && [ -z "$QT5" ] && echo "Specify whether KF5 or QT5 is updated" && exit 1
 [ ! -z "$KF5" ] && [ ! -z "$QT5" ] && echo "Specify either KF5 or QT5 is updated" && exit 1
+[ -z "$OBS_PROJECT" ] && echo "Specify whether you want to update release (sailfishos:chum) or testing (sailfishos:chum:testing) OBS project" && exit 1
 [ -z "$INPUT" ] && echo "Input file missing" && exit 1
 
 [ -d tmp ] && echo "Directory tmp exists. Please remove before starting." && exit 1
+
+echo "Starting updates in ${OBS_PROJECT}"
 
 # process packages
 mkdir -p tmp
