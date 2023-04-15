@@ -72,8 +72,19 @@ while read -r line; do
     fi
     git add rpm/*.spec
     git status
-    git commit -m "Update to version ${REAL_VERSION}"
-    git tag ${REAL_VERSION}
+    
+    if git diff-index --quiet HEAD; then
+	echo "Sources are already updated in the repository, skipping commit"
+    else
+	git commit -m "Update to version ${REAL_VERSION}"
+    fi
+    
+    if [ $(git tag -l ${REAL_VERSION}) ]; then
+	echo "Git tag already set - skipping"
+    else
+	git tag ${REAL_VERSION}
+    fi    
+
     git push origin main --tags
     popd
     popd

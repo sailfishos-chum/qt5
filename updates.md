@@ -22,8 +22,9 @@ Update instructions for Qt5 or KF5:
   - `scripts/update-sources.sh --kf5 --version 5.105.0`
 
 - Observe that the script runs till the end without errors. If there
-  are errors, investigate and see what went wrong. You may have to
-  make full update manually then.
+  are errors, investigate and see what went wrong. You can rerun
+  `update-sources.sh` script several times - it will push changes to
+  the repository only if there are changes.
 
 - If all went well, you have sources updated in GitHub. Go and check
   repositories, corresponding RPM SPEC files, and upstream commits
