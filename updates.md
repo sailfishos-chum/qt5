@@ -4,6 +4,36 @@ To make sure that Qt and KF libraries are up to date, several scripts
 and configuration files were made to simplify changing of the
 versions.
 
+## Configuration file format
+
+There are three files describing packages that are handled by these
+scripts:
+
+- `packages.qt5` - Qt5 packages;
+
+- `packages.kf5` - KDE Frameworks packages;
+
+- `applications.obs` - List of applications and libraries that are
+  using Qt5 or KF5 packages listed above.
+
+Format is simple and consists of a list with one package per line. If
+the package has different GitHub repository and OBS package names, put GitHub
+name first then OBS package name. If automatic update is not available
+for that package, add NOAUTO keyword at the end of the line. Examples:
+
+```
+qtbase
+qtwebengine NOAUTO
+kirigami2 opt-kf5-kirigami2
+```
+
+Comments are not supported. Empty lines can be inserted to improve
+readability.
+
+For applications using these libraries, it is recommended to add the
+OBS package names to `applications.obs`.
+
+
 ## To update
 
 Update instructions for Qt5 or KF5:
@@ -44,31 +74,3 @@ Update instructions for Qt5 or KF5:
   - for KF5: `scripts/update-obs-packages.sh --kf5 --release`
 
 
-## Configuration file format
-
-There are three files describing packages that are handled by these
-scripts:
-
-- `packages.qt5` - Qt5 packages;
-
-- `packages.kf5` - KDE Frameworks packages;
-
-- `applications.obs` - List of applications and libraries that are
-  using Qt5 or KF5 packages listed above.
-
-Format is simple and consists of a list with one package per line. If
-the package has different GitHub repository and OBS package names, put GitHub
-name first then OBS package name. If automatic update is not available
-for that package, add NOAUTO keyword at the end of the line. Examples:
-
-```
-qtbase
-qtwebengine NOAUTO
-kirigami2 opt-kf5-kirigami2
-```
-
-Comments are not supported. Empty lines can be inserted to improve
-readability.
-
-For applications using these libraries, it is recommended to add the
-OBS package names to `applications.obs`.
