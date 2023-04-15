@@ -74,7 +74,7 @@ Update instructions for Qt5 or KF5:
   - for KF5: `scripts/update-obs-packages.sh --kf5 --release`
 
 
-# To change OBS targets
+## To change OBS targets
 
 To add or remove Sailfish OS targets for libraries and applications,
 use `scripts/update-obs-targets.sh`:
