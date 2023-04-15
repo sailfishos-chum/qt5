@@ -38,7 +38,7 @@ while read -r line; do
     package_arr=($line)
     package_git=${package_arr[0]}
     package_obs=$package_git
-    (( ${#package_arr[@]} > 1 )) && [ ${package_arr[0]} != "NOAUTO" ] && package_obs=${package_arr[1]}
+    (( ${#package_arr[@]} > 1 )) && package_obs=${package_arr[1]}
 
     # get the tag with the largest version
     VERSION=$(git -c 'versionsort.suffix=-' ls-remote --exit-code \
