@@ -30,7 +30,12 @@ Update instructions for Qt5 or KF5:
   repositories, corresponding RPM SPEC files, and upstream commits
   pointed by the package.
 
-- to be continued with OBS part
+- Clean up `tmp` subfolder
+
+- For updating packages at OBS, run
+  - for Qt5: `scripts/update-obs-packages.sh --qt5`
+  - for KF5: `scripts/update-obs-packages.sh --kf5`
+
 
 ## Configuration file format
 
