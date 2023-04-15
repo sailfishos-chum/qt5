@@ -9,12 +9,12 @@ versions.
 There are three files describing packages that are handled by these
 scripts:
 
-- `packages.qt5` - Qt5 packages;
+- [packages.qt5](packages.qt5) - Qt5 packages;
 
-- `packages.kf5` - KDE Frameworks packages;
+- [packages.kf5](packages.kf5) - KDE Frameworks packages;
 
-- `applications.obs` - List of applications and libraries that are
-  using Qt5 or KF5 packages listed above.
+- [applications.obs](applications.obs) - List of applications and
+  libraries that are using Qt5 or KF5 packages listed above.
 
 Format is simple and consists of a list with one package per line. If
 the package has different GitHub repository and OBS package names, put GitHub
