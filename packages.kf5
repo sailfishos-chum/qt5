@@ -3,7 +3,6 @@ kf5 opt-kf5 NOAUTO
 breeze-icons
 extra-cmake-modules opt-extra-cmake-modules
 karchive opt-kf5-karchive
-kauth opt-kf5-kauth
 kcodecs opt-kf5-kcodecs
 kconfig opt-kf5-kconfig
 kconfigwidgets opt-kf5-kconfigwidgets
