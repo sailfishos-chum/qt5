@@ -60,10 +60,11 @@ Update instructions for Qt5 or KF5:
   repositories, corresponding RPM SPEC files, and upstream commits
   pointed by the package.
 
-- Add a note regarding current Qt5 or KF5 version in corresponding
-  repository ([Qt5](https://github.com/sailfishos-chum/qt5) or
-  [KF5](https://github.com/sailfishos-chum/kf5)). Tag the repository
-  with the corresponding version as well.
+- In corresponding repository ([Qt5](https://github.com/sailfishos-chum/qt5) or
+  [KF5](https://github.com/sailfishos-chum/kf5)):
+  - Set new version in SPEC;
+  - Add a note in README regarding current Qt5 or KF5 version;
+  - Tag the repository with the corresponding version.
 
 - Clean up `tmp` subfolder
 
