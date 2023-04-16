@@ -1,4 +1,24 @@
-kquickcharts opt-kf5-kquickcharts
+kf5 opt-kf5 NOAUTO
+
+breeze-icons
+extra-cmake-modules opt-extra-cmake-modules
+karchive opt-kf5-karchive
+kauth opt-kf5-kauth
+kcodecs opt-kf5-kcodecs
+kconfig opt-kf5-kconfig
+kconfigwidgets opt-kf5-kconfigwidgets
+kcoreaddons opt-kf5-kcoreaddons
+kdbusaddons opt-kf5-kdbusaddons
+kguiaddons opt-kf5-kguiaddons
+ki18n opt-kf5-ki18n
 kiconthemes opt-kf5-kiconthemes
+kirigami2 opt-kf5-kirigami2
+kirigami-addons opt-kf5-kirigami-addons NOAUTO
+kitemviews opt-kf5-kitemviews
+knotifications opt-kf5-knotifications
+kquickcharts opt-kf5-kquickcharts
+kwidgetsaddons opt-kf5-kwidgetsaddons
+kwindowsystem opt-kf5-kwindowsystem
 
 qqc2-breeze-style NOAUTO
+plasma-wayland-protocols NOAUTO

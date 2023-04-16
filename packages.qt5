@@ -1,3 +1,29 @@
-qtwebengine NOAUTO
-qtsvg
+qt5 NOAUTO
+qtbase
+
+qt3d
+qtcharts
+qtconnectivity
+qtdatavis3d
+qtdeclarative
+qtgamepad
+qtgraphicaleffects
+qtimageformats
+qtlocation
+qtmultimedia
+qtnetworkauth
+qtquickcontrols
+qtquickcontrols2
 qtscxml
+qtsensors
+qtsvg
+qttools
+qtvirtualkeyboard
+qtwayland
+qtwebchannel
+qtwebengine NOAUTO
+qtwebsockets
+qtwebview
+qtxmlpatterns
+
+qt-sfos-maliit-platforminputcontext NOAUTO
