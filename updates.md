@@ -79,9 +79,6 @@ Update instructions for Qt5 or KF5:
 To add or remove Sailfish OS targets for libraries and applications,
 use `scripts/update-obs-targets.sh`:
 
-- Make sure that you don't have any `tmp` subfolder left from previous
-  updates
-
 - To add target:
   - `scripts/update-obs-targets.sh --release --add 4.5.0.19`
 
