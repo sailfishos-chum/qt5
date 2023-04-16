@@ -17,8 +17,8 @@ while [ : ]; do
   case "$1" in
     -a | --add) OPT="--add $2"; shift 2; ;;
     -d | --delete) OPT="--del $2"; shift 2; ;;
-    -r | --release) OBS_PROJECT=home:rinigus:qt515:packaging; shift; ;;
-    -t | --testing) OBS_PROJECT=home:rinigus:qt515:packaging; shift; ;;
+    -r | --release) OBS_PROJECT=sailfishos:chum; shift; ;;
+    -t | --testing) OBS_PROJECT=sailfishos:chum:testing; shift; ;;
     --) shift; break; ;;
   esac
 done

@@ -8,7 +8,7 @@ INPUT=
 KF5=
 QT5=
 VERSION=
-GITHUB_BASE=https://github.com/rinigus
+GITHUB_BASE=https://github.com/sailfishos-chum
 
 eval set -- "$ARGS_PROCESSED"
 while [ : ]; do

@@ -7,7 +7,7 @@ ARGS_PROCESSED=$(getopt -o kqrt --long kf5,qt5,release,testing -- "$@")
 INPUT=
 KF5=
 QT5=
-GITHUB_BASE=https://github.com/rinigus
+GITHUB_BASE=https://github.com/sailfishos-chum
 OBS_PROJECT=
 
 eval set -- "$ARGS_PROCESSED"
@@ -15,8 +15,8 @@ while [ : ]; do
   case "$1" in
     -k | --kf5) KF5=1; INPUT=packages.kf5; shift; ;;
     -q | --qt5) QT5=1; INPUT=packages.qt5; shift; ;;
-    -r | --release) OBS_PROJECT=home:rinigus:qt515:packaging; shift; ;;
-    -t | --testing) OBS_PROJECT=home:rinigus:qt515:packaging; shift; ;;
+    -r | --release) OBS_PROJECT=sailfishos:chum; shift; ;;
+    -t | --testing) OBS_PROJECT=sailfishos:chum:testing; shift; ;;
     --) shift; break; ;;
   esac
 done
