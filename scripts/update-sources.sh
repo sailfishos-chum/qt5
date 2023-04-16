@@ -89,4 +89,4 @@ while read -r line; do
     popd
     popd
     echo
-done < <(grep -v NOAUTO $INPUT)
+done < <(grep -v NOAUTO $INPUT | grep -v NOGIT)

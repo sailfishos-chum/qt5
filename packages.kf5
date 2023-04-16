@@ -1,4 +1,4 @@
-kf5 opt-kf5 NOAUTO
+kf5 opt-kf5 NOGIT
 
 breeze-icons
 extra-cmake-modules opt-extra-cmake-modules

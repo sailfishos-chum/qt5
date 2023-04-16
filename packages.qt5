@@ -1,4 +1,4 @@
-qt5 NOAUTO
+qt5 NOGIT
 qtbase
 
 qt3d

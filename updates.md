@@ -18,13 +18,24 @@ scripts:
 
 Format is simple and consists of a list with one package per line. If
 the package has different GitHub repository and OBS package names, put GitHub
-name first then OBS package name. If automatic update is not available
-for that package, add NOAUTO keyword at the end of the line. Examples:
+name first then OBS package name.
+
+If automatic update is not available for that package, add NOAUTO or
+NOGIT keyword at the end of the line. Differences between keywords:
+
+- NOGIT - automatic GitHub source repository is skipped, project
+  _service update at OBS is automatic.
+
+- NOAUTO - automatic update is skipped for GitHub sources and for
+  _service at OBS.
+
+Examples:
 
 ```
 qtbase
 qtwebengine NOAUTO
 kirigami2 opt-kf5-kirigami2
+qt5 NOGIT
 ```
 
 Comments are not supported. Empty lines can be inserted to improve
