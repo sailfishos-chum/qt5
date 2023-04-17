@@ -13,6 +13,7 @@ ki18n opt-kf5-ki18n
 kiconthemes opt-kf5-kiconthemes
 kirigami2 opt-kf5-kirigami2
 kirigami-addons opt-kf5-kirigami-addons NOAUTO
+kitemmodels opt-kf5-kitemmodels
 kitemviews opt-kf5-kitemviews
 knotifications opt-kf5-knotifications
 kquickcharts opt-kf5-kquickcharts
