@@ -21,4 +21,5 @@ kwidgetsaddons opt-kf5-kwidgetsaddons
 kwindowsystem opt-kf5-kwindowsystem
 
 qqc2-breeze-style NOAUTO
+kpublictransport opt-kpublictransport NOAUTO
 plasma-wayland-protocols NOAUTO
