@@ -4,9 +4,11 @@ breeze-icons
 extra-cmake-modules opt-extra-cmake-modules
 karchive opt-kf5-karchive
 kcodecs opt-kf5-kcodecs
+kcompletion opt-kf5-kcompletion 
 kconfig opt-kf5-kconfig
 kconfigwidgets opt-kf5-kconfigwidgets
 kcoreaddons opt-kf5-kcoreaddons
+kcrash opt-kf5-kcrash
 kdbusaddons opt-kf5-kdbusaddons
 kguiaddons opt-kf5-kguiaddons
 ki18n opt-kf5-ki18n
