@@ -18,6 +18,7 @@ kirigami-addons opt-kf5-kirigami-addons NOAUTO
 kitemmodels opt-kf5-kitemmodels
 kitemviews opt-kf5-kitemviews
 knotifications opt-kf5-knotifications
+kservice opt-kf5-kservice
 kquickcharts opt-kf5-kquickcharts
 kwidgetsaddons opt-kf5-kwidgetsaddons
 kwindowsystem opt-kf5-kwindowsystem
