@@ -21,6 +21,7 @@ knotifications opt-kf5-knotifications
 kquickcharts opt-kf5-kquickcharts
 kwidgetsaddons opt-kf5-kwidgetsaddons
 kwindowsystem opt-kf5-kwindowsystem
+solid opt-kf5-solid
 
 qqc2-breeze-style NOAUTO
 kpublictransport opt-kpublictransport NOAUTO
