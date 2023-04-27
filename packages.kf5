@@ -22,6 +22,7 @@ knotifications opt-kf5-knotifications
 kservice opt-kf5-kservice
 ktextwidgets opt-kf5-ktextwidgets
 kquickcharts opt-kf5-kquickcharts
+kxmlgui opt-kf5-kxmlgui
 kwidgetsaddons opt-kf5-kwidgetsaddons
 kwindowsystem opt-kf5-kwindowsystem
 solid opt-kf5-solid
