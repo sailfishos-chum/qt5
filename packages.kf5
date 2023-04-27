@@ -13,6 +13,7 @@ kdbusaddons opt-kf5-kdbusaddons
 kguiaddons opt-kf5-kguiaddons
 ki18n opt-kf5-ki18n
 kiconthemes opt-kf5-kiconthemes
+kio opt-kf5-kio
 kirigami2 opt-kf5-kirigami2
 kirigami-addons opt-kf5-kirigami-addons NOAUTO
 kitemmodels opt-kf5-kitemmodels
@@ -23,6 +24,7 @@ kquickcharts opt-kf5-kquickcharts
 kwidgetsaddons opt-kf5-kwidgetsaddons
 kwindowsystem opt-kf5-kwindowsystem
 solid opt-kf5-solid
+sonnet opt-kf5-sonnet
 
 qqc2-breeze-style NOAUTO
 kpublictransport opt-kpublictransport NOAUTO
