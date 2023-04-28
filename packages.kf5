@@ -19,6 +19,7 @@ kirigami2 opt-kf5-kirigami2
 kirigami-addons opt-kf5-kirigami-addons NOAUTO
 kitemmodels opt-kf5-kitemmodels
 kitemviews opt-kf5-kitemviews
+kjobwidgets opt-kf5-kjobwidgets
 knotifications opt-kf5-knotifications
 kservice opt-kf5-kservice
 ktextwidgets opt-kf5-ktextwidgets
