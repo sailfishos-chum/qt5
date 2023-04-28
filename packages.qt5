@@ -27,3 +27,4 @@ qtwebview
 qtxmlpatterns
 
 qt-sfos-maliit-platforminputcontext NOAUTO
+qca opt-qca NOAUTO
