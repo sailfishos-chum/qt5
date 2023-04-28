@@ -3,6 +3,7 @@ kf5 opt-kf5 NOGIT
 breeze-icons
 extra-cmake-modules opt-extra-cmake-modules
 karchive opt-kf5-karchive
+kbookmarks opt-kf5-kbookmarks
 kcodecs opt-kf5-kcodecs
 kcompletion opt-kf5-kcompletion 
 kconfig opt-kf5-kconfig
