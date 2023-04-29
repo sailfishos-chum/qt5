@@ -34,4 +34,5 @@ sonnet opt-kf5-sonnet
 
 qqc2-breeze-style NOAUTO
 kpublictransport opt-kpublictransport NOAUTO
+plasma-integration opt-plasma-integration NOAUTO
 plasma-wayland-protocols NOAUTO
