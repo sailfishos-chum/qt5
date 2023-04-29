@@ -11,6 +11,7 @@ kconfigwidgets opt-kf5-kconfigwidgets
 kcoreaddons opt-kf5-kcoreaddons
 kcrash opt-kf5-kcrash
 kdbusaddons opt-kf5-kdbusaddons
+kfilemetadata opt-kf5-kfilemetadata
 kguiaddons opt-kf5-kguiaddons
 ki18n opt-kf5-ki18n
 kiconthemes opt-kf5-kiconthemes
