@@ -1,6 +1,6 @@
 # Qt5 meta package for Sailfish OS
 
-**Current packaged version: 5.15.8**
+**Current packaged version: 5.15.9**
 
 Packaging of Qt 5.15 for SFOS under /opt. Contains also general issues
 regarding the packaging.
