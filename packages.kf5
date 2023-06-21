@@ -33,8 +33,11 @@ kwidgetsaddons opt-kf5-kwidgetsaddons
 kwindowsystem opt-kf5-kwindowsystem
 solid opt-kf5-solid
 sonnet opt-kf5-sonnet
+syndication syndication
+threadweaver threadweaver
 
 qqc2-breeze-style NOAUTO
+kasts NOAUTO
 kpublictransport opt-kpublictransport NOAUTO
 plasma-integration opt-plasma-integration NOAUTO
 plasma-wayland-protocols NOAUTO
