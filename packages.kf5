@@ -31,6 +31,7 @@ kwallet opt-kf5-kwallet
 kwayland opt-kf5-kwayland
 kwidgetsaddons opt-kf5-kwidgetsaddons
 kwindowsystem opt-kf5-kwindowsystem
+purpose opt-kf5-purpose
 solid opt-kf5-solid
 sonnet opt-kf5-sonnet
 syndication syndication
