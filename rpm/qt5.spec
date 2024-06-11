@@ -1,5 +1,5 @@
 Name: opt-qt5
-Version: 5.15.10
+Version: 5.15.14
 Release: 1%{?dist}
 Summary: Qt5 meta package
 License: GPLv3
