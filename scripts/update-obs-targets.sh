@@ -2,7 +2,7 @@
 
 set -e
 
-ARGS_PROCESSED=$(getopt -o a:d:rt --long add:,delete:,release,testing -- "$@")
+ARGS_PROCESSED=$(getopt -o a:d:rt --long add:,delete:,release,testing,reset -- "$@")
 
 ADD=
 DEL=
@@ -16,7 +16,8 @@ eval set -- "$ARGS_PROCESSED"
 while [ : ]; do
   case "$1" in
     -a | --add) OPT="--add $2"; shift 2; ;;
-    -d | --delete) OPT="--del $2"; shift 2; ;;
+    -d | --delete) OPT="--delete $2"; shift 2; ;;
+    --reset) OPT="--reset"; shift; ;;
     -r | --release) OBS_PROJECT=sailfishos:chum; shift; ;;
     -t | --testing) OBS_PROJECT=sailfishos:chum:testing; shift; ;;
     --) shift; break; ;;
@@ -24,7 +25,7 @@ while [ : ]; do
 done
 
 # check options
-[ -z "$OPT" ] && echo "Specify whether you want to add or delete SFOS version build target" && exit 1
+[ -z "$OPT" ] && echo "Specify whether you want to add or delete SFOS version build target or reset all targets" && exit 1
 [ -z "$OBS_PROJECT" ] && echo "Specify whether you want to update release (sailfishos:chum) or testing (sailfishos:chum:testing) OBS project" && exit 1
 
 echo -e "\nChanging targets in ${OBS_PROJECT}\n"
@@ -49,6 +50,6 @@ for package in $PACKAGES; do
     echo
 
     osc meta pkg ${OBS_PROJECT} ${package} | \
-	${OBSMOD} ${OPT} | \
-	osc meta pkg ${OBS_PROJECT} ${package} -F -
+       ${OBSMOD} ${OPT} | \
+       osc meta pkg ${OBS_PROJECT} ${package} -F -
 done
